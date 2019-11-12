@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/DataEntry"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/employeename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="employeename"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:text="Employee Name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/firstname"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="fn"
+            android:text="firstname"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="ln"
+            android:text="lastname"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/personsage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="psa"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/numberweight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="nw"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/numberheight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="nh"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/submitbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickMeButtonPressed"
+            android:text="Submit!" />
+
+        <TextView
+            android:id="@+id/firstnamechecker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="fntracker"
+            android:text="firstnamechecker"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/printfirstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="pfn"
+            android:text="printfirstname"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lastnameprinted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="pln"
+            android:text="printlastname"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/printage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="agep"
+            android:text="ageprinted"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/printweight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="pweight"
+            android:text="weightprinted"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/printheight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="pheight"
+            android:text="heightprinted"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/wrongtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+    </LinearLayout>
+
+</LinearLayout>
